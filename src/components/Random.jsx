@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Random() {
-    const [value, setValue] = useState(0);
+    const [value, setValue] = useState("No Number Generated Yet!");
     const [message, setMessage] = useState(false);
 
     const handleRandom = () => {
@@ -18,7 +18,7 @@ function Random() {
                 Generated Random Number
             </p>
             <h1
-                className={`text-3xl font-bold ${value !== 0 ? "" : "text-transparent"}`}
+                className={`text-3xl font-bold`}
             >
                 {value}
             </h1>
